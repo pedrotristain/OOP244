@@ -1,0 +1,18 @@
+Name:		Pedro Zelada Souza
+Student#:	116427188
+E-mail:		pzelada-souza@myseneca.ca
+Sect:		SHH
+
+1)	Why do you need to allocate new dynamic memory for the entire array when you increase the size of an existing array of dynamically allocated memory? Why not allocate memory only for the new element?
+
+Because an array is a block of memory contiguously allocated in memory. 
+Allocating memory only for the new element would not ensure it would be contiguous to the original array.
+
+2)	The CellPhone structure stores the model of the cellphone in an array of characters. At the end of the program, we do not use the delete operator to deallocate the memory occupied by the model. Why don’t we need to use the delete operator on this array itself? Explain and compare with the array of cellphones.
+
+A structure is allocated in memory in a somewhat contiguous way (account for padding).
+It means that when we deallocate the memory for the structure,  its members will also have their memory deallocated automatically.
+
+3)	There are two display(...) function definitions. How does the compiler know which definition to call from your main function?
+
+The compiler knows which definition to call by the number and order of the parameters.

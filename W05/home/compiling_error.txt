@@ -1,0 +1,11 @@
+/home/pedro/Documents/OOP244/W05/home/Fraction.cpp: In member function ‘sict::Fraction& sict::Fraction::operator+=(const sict::Fraction&) const’:
+/home/pedro/Documents/OOP244/W05/home/Fraction.cpp:216:19: warning: passing ‘const sict::Fraction’ as ‘this’ argument discards qualifiers [-fpermissive]
+   *this = *this + right_operand;
+                   ^~~~~~~~~~~~~
+In file included from /home/pedro/Documents/OOP244/W05/home/Fraction.cpp:14:0:
+/home/pedro/Documents/OOP244/W05/home/Fraction.h:18:8: note:   in call to ‘constexpr sict::Fraction& sict::Fraction::operator=(sict::Fraction&&)’
+  class Fraction {
+        ^~~~~~~~
+/home/pedro/Documents/OOP244/W05/home/Fraction.cpp:218:10: error: binding reference of type ‘sict::Fraction&’ to ‘const sict::Fraction’ discards qualifiers
+   return *this;
+          ^~~~~

@@ -1,0 +1,14 @@
+In line number 11 of your output:
+The output should be:
+Fraction d(2, 4); // d = 1/2
+                           ^
+But your output is: 
+Fraction d(2, 4); // d = 1/4
+                           ^
+
+Unmatched character details:
+The character in column 28 is supposed to be:
+  [2] ASCII code(50)
+but you printed
+  [4] ASCII code(52)
+

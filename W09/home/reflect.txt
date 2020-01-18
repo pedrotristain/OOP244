@@ -1,0 +1,63 @@
+Name:			Pedro Zelada Souza
+Student#:	116427188
+E-mail:		pzelada-souza@myseneca.ca
+Sect:			SHH
+
+Workshop:	09
+
+
+-------------- Questions --------------
+
+
+1) What happens if you try to put your template functions in Data.cpp? Does your source code compile if you move all functions to Data.h ?
+
+  Moving my template functions to Data.cpp results in a compile error stating that no function called in the client code were declared.
+
+  Also, moving all functions to Data.h does not work as well. The compiler throws an error statin that the function answers is being declared multiple times.
+
+  Removing the prototype does not seem to fix this.
+
+
+
+2) Move one template function into ws9_lab.cpp. Does it work now? Do you need to define the template function above main(), before it is used, or can you define it below main() ?
+
+  Moving one template function to the client code did not work, no matter if it was inserted before the main function or after it.
+
+  I'm assuming it is related to the namespace.
+
+
+
+3) Could you have done this lab without templates, by just overloading your functions in Data.h to accept integer and double arguments? What is the advantage of using templates?
+
+  I could have done this lab without templates, but it would increase my workload and my code size.
+
+  The advantage of using templates is the reduction of the work and reutilization of code.
+
+  I just define the logic once and the compiler does the rest by creating the overloaded functions during compilation.
+
+
+
+4) What is the difference between template<class T> and template<typename T> ?
+
+  Basically none. Typename is used to declare nested types, when there is dependency of types. Other than that, they are both semantically equal.
+
+
+
+5) What have you learned doing this workshop?
+
+  In this workshop, I learned about parametric polymorphism through the implementation of template functions.
+
+  Parametric polymorphism can also be applied to template classes.
+
+  These functions are written ignoring the type of the parameters they receive, meaning they work the same way if they receive one type of parameter or another, like an integer or a double.
+
+  The compiler replaces the template function parameter with the appropriate type during run time, as long as the parameters are unambiguous.
+
+  Lastly, I learned about constrained casting, which improve type safety. By trying to cast a value from one type to another, we can introduce ambiguity so it is best to avoid it.
+
+
+------------------
+Quiz 9 Reflection
+------------------
+
+I got no wrong questions.

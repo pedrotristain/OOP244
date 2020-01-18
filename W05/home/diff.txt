@@ -1,0 +1,14 @@
+In line number 18 of your output:
+The output should be:
+(a != c) equals false
+                ^
+But your output is: 
+(a != c) equals true
+                ^
+
+Unmatched character details:
+The character in column 17 is supposed to be:
+  [f] ASCII code(102)
+but you printed
+  [t] ASCII code(116)
+

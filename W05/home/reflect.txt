@@ -1,0 +1,71 @@
+Name:			Pedro Zelada Souza
+Student#:	116427188
+E-mail:		pzelada-souza@myseneca.ca
+Sect:			SHH
+
+Workshop:	05
+
+
+
+In this workshop I learned how to perform arithmetic calculations with objects of the same class by overloading the built in arithmetic operators.
+
+I also learned how to do logical calculations thorugh operator overload, such as comparing if two objects are equal by overloadint the '==' operator.
+
+Finally, I learned that objects can be created temporarily through the execution of another object's member functions, in which case the temporary object will cease existing by the end of the function lifetime.
+
+I found this workshop simple to understand and really easy to execute, having more "trouble" with the math than with the code.
+
+That being said, the concept of pointers and references still eludes me somehow, so I had some trouble figuring out the last overload function '+=' as it has to work with a pointer 'this' and return a reference of the object.
+
+
+
+-------------- Questions --------------
+
+
+
+1) The operator+ returns a Fraction object. Explain why this operator should not return a reference to a Fraction object (like operator+= ).
+
+Because it is a good design practice to do so.
+
+When using the '+' operator with fundamental types, the expected is a binary operation that return the sum of both operands.
+
+The same should be expected when using 'x' with derived types.
+
+
+
+2. List the temporary objects in the tester module (the temporary objects are those that have no name and are removed from memory immediately after their creation; put messages in the constructors/destructor to reveal them).
+
+The temporary objects were created during the two argument constructor (when invalid).
+
+In the tester module, temporary objects are created when constructiong the 'a' and the 'c' Fraction objects.
+
+
+
+3. List the simplifications that you made to your class to minimize duplication.
+
+I used temporary objects to validate the logic in the constructors and the overload of the sum and multiplication operators.
+
+I used member functions inside member functions when overloading the sum and assign '+=' and the not equal to '!=' operators.
+
+In the case of the '+=' operator, I used the '+' overloaded operator and assigned the resulting value to the current object using '*this'.
+
+In the case of the '!=' operator, I used the '==' overloaded operator and return the opposite value.
+
+
+------------------
+Quiz 5 Reflection
+------------------
+
+Question 4)
+
+My Answer: Helper Functions
+
+Correct Answer: Friend
+
+
+
+Question 5)
+
+My Answer: Count: 6Count: 7Count: 7            // [The values were 677]
+
+Correct Answer: Count: 6Count: 6Count: 7       // [Correct values: 667]

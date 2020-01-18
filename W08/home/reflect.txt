@@ -1,0 +1,87 @@
+Name:			Pedro Zelada Souza
+Student#:	116427188
+E-mail:		pzelada-souza@myseneca.ca
+Sect:			SHH
+
+Workshop:	08
+
+
+
+In this workshop I learned about polymorphism and it's concepts, include interface classes, abstract base classes, virtual and pure virtual functions.
+
+I also learned that interfaces can define behaviour to it's multiple derived classes, serving as a blueprint for the rest of the hierarchy tree.
+
+Interface classes cannot be implemented or initiated, as they are purely abstract classes, but they define the layout of any other abstract and concrete classes that are derived from them.
+
+Even though interface classes can not be implemented or initiated, by creating a pointer to a interface, we can create a polymorphic object, that can change it's static type as needed.
+
+Finally, I also learned about function bindings, which states how the object's current type define it's behavior when it's member methods are used.
+
+The bindings can be either static, which means that the object's base type methods will be used, or dynamice, which means that it's most derived type methods will be used.
+
+
+-------------- Questions --------------
+
+
+
+1) What is the difference between an abstract base class and a concrete class?
+
+Abstract classes cannot be initated because not all of its methods have been implemented.
+
+Concrete, on the other hand can be initiated because all of it's methods have either been implemented or inherited.
+
+
+2) Take a look to the main module how is it possible that this module can work with chequing and savings accounts but doesn’t know about the SavingsAccount or ChequingAccount classes?
+
+The main module can work with these classes because these classes are used through pointers to a polymorphic object, meaning that the main module knows the expected behavior of the created objects without knowing their implementation.
+
+The implementation is then handled by the inheritance and polymorphism, with each method being called from the current defined type of the object being manipulated.
+
+
+3) Note that the interface has a destructor, even if doesn’t store any attributes. Why is that destructor necessary?
+
+The destructor is necessary because when a polymorphic object is destroied, the program needs to know which destructor to use.
+
+By defining a pure virtual destructor in the interface class, we assure that the most derived destructor is used.
+
+
+4) In the context of a hierarchy of classes, what is the difference between overloading, overriding and shadowing?
+
+Overloading is when the behavior of a method is changed within the same class type.
+
+Overriding is when a derived class' function is called instead of the base class' function, changing the behavior of the said function.
+
+Shadowing is when a derived class expands upon the base class' function by calling the base class' function within it's own function.
+
+
+------------------
+Quiz 8 Reflection
+------------------
+
+1) When do we call a class as abstract class?
+
+When a class cannot be instatiated because it contains or inherits at least one pure virtual function.
+
+
+
+2) When do we need a virtual function?
+
+We need a virtuall function when we want the most derived class' function to be used instead of the base class' function.
+
+
+
+3) Write True / False for the followings
+
+  a) Polymorphic object can not change its dynamic type throughout its lifetime.
+
+  FALSE
+
+  b) Functions are declared with a virtual keyword in derived class.
+
+  FALSE
+
+
+
+4) Find the output of following program.
+
+In Derived  In Base

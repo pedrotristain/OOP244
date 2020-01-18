@@ -1,0 +1,8 @@
+/home/pedro/Documents/OOP244/W09/lab/Data.cpp: In function ‘void sict::answers(const int*, const int*, const int*, const double*, const int*, int)’:
+/home/pedro/Documents/OOP244/W09/lab/Data.cpp:38:23: error: ‘asd’ was not declared in this scope
+   cout << " million"; asd
+                       ^~~
+/home/pedro/Documents/OOP244/W09/lab/Data.cpp:38:23: note: suggested alternative: ‘last’
+   cout << " million"; asd
+                       ^~~
+                       last

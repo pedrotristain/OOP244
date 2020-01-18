@@ -1,0 +1,14 @@
+In line number 215 of your output:
+The output should be:
+            Name (no spaces): Blanket
+                                 ^
+But your output is: 
+            Name (no spaces): Bla
+                                 ^
+
+Unmatched character details:
+The character in column 34 is supposed to be:
+  [n] ASCII code(110)
+but you printed
+  [Newline (\n) or Carriage Retrun (\r)] ASCII code(13)
+

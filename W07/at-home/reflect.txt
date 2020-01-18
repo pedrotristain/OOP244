@@ -1,0 +1,32 @@
+Name:			Pedro Zelada Souza
+Student#:	116427188
+E-mail:		pzelada-souza@myseneca.ca
+Sect:			SHH
+
+Workshop:	07
+
+
+
+In this workshop I learned about class inheritance, where a derived class can be created from a base classe.
+
+In this process, the derived (child) class inherits the base (parent) class' member variables and functions, reducing redundancy in coding classes that are related to each other and making development faster.
+
+The base / parent class does not need to know about the derived / child class and it can be instanced as an independent entity.
+
+The derived class, on the other hand, needs to know about the base class as it is an "extended" entity of the base class.
+
+When a SuperHero and a Hero battle out, the message printed was "Ancient Battle!" because the function used in the battle was the one from the base class Hero.
+
+
+
+------------------
+Quiz 7 Reflection
+------------------
+
+
+
+Question 5)
+
+My answer: No Default.
+
+Correct answer: Private.

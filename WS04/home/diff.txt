@@ -1,0 +1,14 @@
+In line number 31 of your output:
+The output should be:
+Miller, Vanessa goes to Toronto on 2019/06/20
+                                        ^
+But your output is: 
+Miller, Vanessa goes to Toronto on 2019/6/20
+                                        ^
+
+Unmatched character details:
+The character in column 41 is supposed to be:
+  [0] ASCII code(48)
+but you printed
+  [6] ASCII code(54)
+

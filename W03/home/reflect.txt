@@ -1,0 +1,43 @@
+/*
+	Name:			Pedro Zelada Souza
+	Student#:	116427188
+	E-mail:		pzelada-souza@myseneca.ca
+	Sect:			SHH
+
+	Workshop:	03
+*/
+
+1) What type have you selected for ISBN? Explain your reasoning.
+
+I selected the 'long long' type for ISBN.
+
+The reason for selecting long long is that it can hold an integer number of value up to 9,223,372,036,854,775,807.
+
+The only other type that could hold such a large number is __int64, but t is a non-standard data type.
+
+
+2) For the at-home portion you had to change the logic that validates an ISBN. How would you design your class in such a way that if a new update to the validation logic is necessary, you don’t have to change anything in the function Book::set(...) ?
+
+I would add a function member ( Book::isISBNValid() ) to the Book class (probably as a private member) that would execute the validation logic and return a boolean value indicating if the ISBN number is valid or not.
+
+I would then change the Book::set() function to call the isISBNValid() when needed.
+
+Whenever the validation logic changed, I would only update the isISBNValid() function and keep the set() function as it is.
+
+------------------
+Quiz 2 Reflection
+------------------
+
+[1] Who is responsible for allocating memory for statically allocated object?                          1
+    a) Assembler              b) Compiler                  c) Interpreter
+
+My Answer: c) Interpreter
+Right Answer: b) Compiler
+
+--
+
+3] Which of the following in Object Oriented Programming is supported  by Function overloading and default arguments features of C++.                                                                                   1
+   a) Inheritance            b) Polymorphism               c) Encapsulation
+
+My Answer: a) Inheritance
+Right Answer: b) Polymorphism

@@ -1,0 +1,41 @@
+Name:			Pedro Zelada Souza
+Student#:	116427188
+E-mail:		pzelada-souza@myseneca.ca
+Sect:			SHH
+
+Workshop:	04
+
+In this workshop, I learned how to define a class constructors so the instances (objects) are initiated on creation with either valid data or in a safe empty space.
+
+I also learned how to overload a constructor, adding multiple versions with different parameters.
+
+I had some trouble figuring out the syntax of some parts that involved pointers and references as I have been programming with other languages and I sometimes mix up their syntaxes.
+
+-------------- Questions --------------
+
+1) What is a safe empty state? Could you define another state as the safe empty state?
+
+A safe empty state is a state that ensures the object does not break the code and behave as expected in case a function is called that will manipulate the objects members.
+
+I'm not sure what other state could be defined as the safe empty state.
+
+
+2) Describe how you have minimized code duplication.
+
+By reusing code that already existed.
+
+
+3) Explain why the canTravelWith(...) member function can access the private data of the object referenced in its parameter.
+
+Because C++ does not implement privacy in the individual level, doing it instead on a Class level.
+It means that one instance of a Class can access the private members of another instanced object of the same class.
+
+------------------
+Quiz 4 Reflection
+------------------
+
+Question 5)
+
+My Answer: No output since 1) There is no default constructor defined for the Class and 2) There is no call for the default output anywhere in the code.
+
+Correct Answer: Compiling error due to missing default constructor.
