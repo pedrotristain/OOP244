@@ -13,7 +13,7 @@
 
 #include "Fraction.h"
 
-using namespace std; // Namespace for the COUT object..
+using namespace std; // Namespace for the COUT object.
 
 namespace sict {
 
